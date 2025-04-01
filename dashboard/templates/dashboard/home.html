@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Momentum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .hero-section {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .feature-section {
+            padding: 50px 0;
+        }
+        .feature-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .feature-item h3 {
+            color: #007bff;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="display-3">Welcome to Momentum</h1>
+            <p class="lead">Manage your projects and tasks efficiently with Momentum. Stay on top of your work and collaborate with your team to deliver great results.</p>
+            <a href="{% url 'login' %}" class="btn btn-custom btn-lg">Login</a>
+            <a href="{% url 'signup' %}" class="btn btn-outline-light btn-lg ms-3">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container feature-section">
+        <h2 class="text-center mb-5">Why Choose Momentum?</h2>
+        <div class="row">
+            <div class="col-md-4 feature-item">
+                <i class="fas fa-tasks fa-3x mb-3"></i>
+                <h3>Project Management</h3>
+                <p>Organize your projects in an intuitive way and track their progress to ensure timely delivery.</p>
+            </div>
+            <div class="col-md-4 feature-item">
+                <i class="fas fa-users fa-3x mb-3"></i>
+                <h3>Team Collaboration</h3>
+                <p>Collaborate with your team members, assign tasks, and track the work efficiently within the app.</p>
+            </div>
+            <div class="col-md-4 feature-item">
+                <i class="fas fa-calendar-check fa-3x mb-3"></i>
+                <h3>Task Scheduling</h3>
+                <p>Manage your tasks, set deadlines, and prioritize work to stay on track with your goals.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Momentum. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
