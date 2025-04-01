@@ -17,7 +17,7 @@ Momentum is a Django-based project management web application that allows users 
 ### Setup
 ```sh
 # Clone the repository
-git clone https://github.com/yourusername/momentum.git
+git clone https://github.com/kshitij1331/momentum.git
 cd momentum
 
 # Create virtual environment
