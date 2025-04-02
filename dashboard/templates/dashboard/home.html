@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="{% static 'images/momentum_logo.webp' %}" alt="Momentum Logo" class="logo">
     <title>Welcome to Momentum</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -10,6 +11,11 @@
         body {
             background-color: #f8f9fa;
             color: #333;
+        }
+        .logo {
+            max-width: 250px;  /* Adjust the size as needed */
+            height: auto;
+            margin-bottom: 20px;
         }
         .hero-section {
             background-color: #007bff;
